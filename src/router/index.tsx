@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import { createBrowserRouter, createMemoryRouter, createRoutesFromElements, Route } from 'react-router-dom';
 import CountryList from '../pages/CountryList/CountryList';
 import CountryPage from '../pages/CountryPage/CountryPage';
 import Map from '../pages/Map/Map'
@@ -25,7 +25,7 @@ const routes: IRoute[] = [
 ];
 
 const AppRouter = () => {
-    const router = createBrowserRouter(
+    const router = createMemoryRouter(
         createRoutesFromElements(
             routes.map((el) => <Route path={el.path} element={el.element} key={el.path} />),
         ),
