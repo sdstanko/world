@@ -1,0 +1,15 @@
+.card {
+	width: 16rem;
+	height: 8rem;
+	background-color: #caf0f8;
+}
+
+.card__body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card__flag {
+	width: 100px;
+}

@@ -1,0 +1,11 @@
+.country {
+    transition: all 0.2s;
+    fill: #0077b6;
+    stroke-width: 0.3px;
+    stroke: #03045e;
+}
+
+.country:hover {
+    fill: #03045e;
+    transform: scale(1.03);
+}

@@ -1,0 +1,39 @@
+.countryList {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.countryList__body {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #caf0f8;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.countryList__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #03045e;
+    padding-bottom: 10px;
+}
+
+.countryList__item + .countryList__item {
+    margin-top: 10px;
+}
+
+.countryList__country {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.countryList__flag {
+    max-width: 150px;
+}

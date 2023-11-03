@@ -1,0 +1,26 @@
+$theme-colors: (
+	'info': tomato,
+	'danger': teal,
+	"primary": #0077b6,
+	'nav-link-color': #caf0f8
+		
+);
+
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+	height: 100%;
+}
+
+#root {
+	height: 100%;
+}
+
+.app {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
