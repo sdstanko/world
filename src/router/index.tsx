@@ -1,7 +1,7 @@
-import { createBrowserRouter, createMemoryRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 import CountryList from '../pages/CountryList/CountryList';
 import CountryPage from '../pages/CountryPage/CountryPage';
-import Map from '../pages/Map/Map'
+import Map from '../pages/Map/Map';
 
 interface IRoute {
     path: string;
@@ -9,27 +9,21 @@ interface IRoute {
     exact?: boolean;
 }
 
-const routes: IRoute[] = [
-    {
-        path: '/',
-        element: <Map />,
-    },
-    {
-        path: '/country/:id',
-        element: <CountryPage />,
-    },
-    {
-        path: '/countrys',
-        element: <CountryList />,
-    },
-];
-
 const AppRouter = () => {
-    const router = createMemoryRouter(
-        createRoutesFromElements(
-            routes.map((el) => <Route path={el.path} element={el.element} key={el.path} />),
-        ),
-    );
+    const router = createBrowserRouter([
+        {
+            path: '/',
+            element: <Map />,
+        },
+        {
+            path: '/country/:id',
+            element: <CountryPage />,
+        },
+        {
+            path: '/countrys',
+            element: <CountryList />,
+        },
+    ]);
 
     return router;
 };
