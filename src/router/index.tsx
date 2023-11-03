@@ -12,15 +12,15 @@ interface IRoute {
 const AppRouter = () => {
     const router = createBrowserRouter([
         {
-            path: '/',
+            path: '/world',
             element: <Map />,
         },
         {
-            path: '/country/:id',
+            path: '/world/country/:id',
             element: <CountryPage />,
         },
         {
-            path: '/countrys',
+            path: '/world/countrys',
             element: <CountryList />,
         },
     ]);
