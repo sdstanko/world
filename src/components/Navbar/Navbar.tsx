@@ -12,10 +12,10 @@ const Navbar = () => {
                 <Container>
                     <NavbarLayout.Brand>World</NavbarLayout.Brand>
                     <Nav className="me-auto">
-                        <Link to="/" className="nav-link">
+                        <Link to="/world" className="nav-link">
                             Map
                         </Link>
-                        <Link to="/countrys" className="nav-link">
+                        <Link to="/world/countrys" className="nav-link">
                             Country List
                         </Link>
                     </Nav>

@@ -31,7 +31,7 @@ const Country: FC<CountryProps> = ({ d, id, setCountryId, wasClickToNav }) => {
 
     const clickHandler = (e: React.MouseEvent) => {
         if (wasClickToNav) {
-            navigate(`/country/${id}`);
+            navigate(`/world/country/${id}`);
         }
     };
 

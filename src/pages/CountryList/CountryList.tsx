@@ -29,7 +29,7 @@ const CountryList = () => {
                             <span className={styles.countryList__num}>{i + 1}</span>
                             <div className={styles.countryList__country}>
                                 <Link
-                                    to={`/country/${ids[i]}`}
+                                    to={`/world/country/${ids[i]}`}
                                     className={styles.countryList__name}
                                 >
                                     {el.name.common}
